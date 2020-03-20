@@ -10,6 +10,6 @@ class CustomersController < ApplicationController
   end
 
   def missing_email
-    @customer = Customer.where(email_address: nil)
+    @customer = Customer.where(email_address: [nil, ''])
   end
 end
