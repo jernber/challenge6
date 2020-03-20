@@ -2,8 +2,9 @@
 
 Rails.application.routes.draw do
   get 'customers/index'
-  get 'customer/index'
-  root to: 'customer#index'
+  get 'customers/alphabetical'
+  get 'customers/missing_email'
+  root to: 'customers#index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
