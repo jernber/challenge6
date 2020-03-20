@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'customers/index'
   get 'customer/index'
   root to: 'customer#index'
 
